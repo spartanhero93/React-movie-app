@@ -3,7 +3,9 @@
 */
 
 .navigation_nav {
-  
+  background-color: #222930;
+  justify-content: center;
+  display: flex;
 }
 .navigation_list {
   display: flex;

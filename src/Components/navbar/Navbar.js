@@ -6,7 +6,7 @@ class Navbar extends Component {
 
   render () {
     return (
-      <nav className='navigation__nav'>
+      <nav className='navigation_nav'>
         <ul className='navigation_list'>
           <li className='navigation_item'>
             <a className='navigation_link' href='/'>Home</a>
