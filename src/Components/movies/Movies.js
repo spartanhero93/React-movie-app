@@ -3,7 +3,7 @@ import './movies.css'
 
 class Movies extends Component {
   state = {
-    isOpen: true
+    isOpen: false
   }
 
   handleClick = () => {
@@ -19,7 +19,6 @@ class Movies extends Component {
     } else {
       return (
         <div className='movies_container'>
-          <button onClick={this.handleClick}>CLOSE THE DOOR</button>
           {data.map(item => (
             <div
               className='movies_item'
