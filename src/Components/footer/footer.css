@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  border: solid 4px;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  text-align: center;
+}
+.footer div {
+  border: solid 3px;
+  width: 33%;
+}
+.footer_prevPage {
+
+}
+.footer_nextPage {
+
+}
