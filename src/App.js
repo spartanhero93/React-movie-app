@@ -32,7 +32,10 @@ class App extends Component {
     return (
       <div className='wrapper'>
         <Navbar />
+        <h1>{window.innerWidth}</h1>
+
         <Movies data={this.state.data.results} />
+
         <Footer
           fetchData={this.fetchData}
           pages={this.state.data.total_pages}

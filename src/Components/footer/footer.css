@@ -6,9 +6,9 @@
   font-size: 3rem;
   text-align: center;
 }
-.footer div {
+.footer button {
   border: solid 3px;
-  width: 33%;
+  width: 50%;
 }
 .footer_prevPage {
 

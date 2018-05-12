@@ -7,6 +7,18 @@
   justify-content: center;
   display: flex;
 }
+.navigation_hamburger {
+  visibility:hidden;
+  position: fixed;
+  left: 1rem;
+  top: 2rem;
+}
+  /*
+.navigation_hamburger span{
+  font-size: 5rem;
+  color:white;
+} */
+
 .navigation_list {
   display: flex;
   flex-direction: row;
@@ -48,11 +60,17 @@
 
 @media(max-width: 750px) {
   .navigation__nav {
-    height: 100vh;
+    
+  }
+  .navigation_hamburger {
+    visibility: visible;
   }
   .navigation_list {
     flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
   }
   .navigation_item {
   }
+  
 }

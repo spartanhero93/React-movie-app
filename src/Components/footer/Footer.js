@@ -5,9 +5,9 @@ export default class Footer extends Component {
   render () {
     return (
       <div className='footer'>
-        <div className='footer_previousPage'>Prev</div>
+        <button className='footer_previousPage'>Prev</button>
         <div className='footer_currentPage'>{this.props.page}</div>
-        <div className='footer_nextPage'>Next</div>
+        <button className='footer_nextPage'>Next</button>
       </div>
     )
   }
