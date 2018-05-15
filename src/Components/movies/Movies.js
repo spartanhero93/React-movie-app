@@ -23,9 +23,6 @@ class Movies extends Component {
             <div
               className='movies_item'
               key={item.id}
-              // style={{
-              //   background: `center / cover no-repeat url(${imgUrl}${item.backdrop_path})`
-              // }}
             >
               <img
                 className={this.state.isOpen ? 'movies_item_img' : 'none'}

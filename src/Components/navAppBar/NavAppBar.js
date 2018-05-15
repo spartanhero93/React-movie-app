@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
+
+import IconLinks from './IconLinks'
+
 import AppBar from 'material-ui/AppBar'
 import { withStyles } from 'material-ui/styles'
 import Toolbar from 'material-ui/Toolbar'
 import Typography from 'material-ui/Typography'
 import Button from 'material-ui/Button'
-import IconButton from 'material-ui/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import Drawer from 'material-ui/Drawer'
-import List from 'material-ui/List'
-import Divider from 'material-ui/Divider'
-import FavoriteIcon from '@material-ui/icons/Favorite'
+import IconButton from 'material-ui/IconButton'
 
 const styles = {
   root: {
@@ -44,22 +44,6 @@ class NavAppBar extends Component {
   render () {
     const { classes } = this.props
 
-    const sideList = (
-      <div className={classes.list}>
-        <List>
-          <IconButton
-            color='primary'
-            className={classes.button}
-            aria-label='Search Top Rated'
-          >
-            <FavoriteIcon />
-          </IconButton>
-          Top Rated Movies
-        </List>
-        <Divider />
-        <List>OK</List>
-      </div>
-    )
     return (
       <div>
         <AppBar position='static'>
@@ -91,7 +75,7 @@ class NavAppBar extends Component {
               onClick={this.toggleDrawer('left', false)}
               onKeyDown={this.toggleDrawer('left', false)}
             >
-              {sideList}
+              <IconLinks />
             </div>
           </Drawer>
         </AppBar>
