@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import API_KEY from './config/apiKey'
 import axios from 'axios'
 
+import Navbar from './Components/navbar/Navbar'
 import NavAppBar from './Components/navAppBar/NavAppBar'
 import Movies from './Components/movies/Movies'
 import Footer from './Components/footer/Footer'
@@ -31,7 +32,7 @@ class App extends Component {
     console.log(this.state.data)
     return (
       <div className='wrapper'>
-        <NavAppBar />
+        <Navbar />
         <h1>{window.innerWidth}</h1>
 
         <Movies data={this.state.data.results} />

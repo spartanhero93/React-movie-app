@@ -19,11 +19,7 @@ const styles = {
     flex: 1
   },
   menuButton: {
-    marginLeft: -12,
-    marginRight: 20
-  },
-  list: {
-    width: 200
+    marginisOpen: -12
   },
   fullList: {
     width: 'auto'
@@ -32,12 +28,12 @@ const styles = {
 
 class NavAppBar extends Component {
   state = {
-    left: false
+    isOpen: false
   }
 
-  toggleDrawer = (side, open) => () => {
+  toggleDrawer = (isOpen, open) => () => {
     this.setState({
-      [side]: open
+      [isOpen]: open
     })
   }
 
@@ -53,7 +49,7 @@ class NavAppBar extends Component {
               color='inherit'
               aria-label='Menu'
             >
-              <MenuIcon onClick={this.toggleDrawer('left', true)} />
+              <MenuIcon onClick={this.toggleDrawer('isOpen', true)} />
             </IconButton>
 
             <Typography
@@ -66,14 +62,14 @@ class NavAppBar extends Component {
             <Button color='inherit'>Login</Button>
           </Toolbar>
           <Drawer
-            open={this.state.left}
-            onClose={this.toggleDrawer('left', false)}
+            open={this.state.isOpen}
+            onClose={this.toggleDrawer('isOpen', false)}
           >
             <div
               tabIndex={0}
               role='button'
-              onClick={this.toggleDrawer('left', false)}
-              onKeyDown={this.toggleDrawer('left', false)}
+              onClick={this.toggleDrawer('isOpen', false)}
+              onKeyDown={this.toggleDrawer('isOpen', false)}
             >
               <IconLinks />
             </div>

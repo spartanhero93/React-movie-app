@@ -1,7 +1,9 @@
 /* 
 [bgColor, fontColor, particleColor] = ["#222930", "#E9E9E9","#4EB1BA" ];
 */
-
+.navigation_wrapper {
+  justify-content: space-evenly;
+}
 .navigation_nav {
   background-color: #222930;
   justify-content: center;
