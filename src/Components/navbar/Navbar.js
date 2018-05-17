@@ -6,11 +6,11 @@ import './navbar.css'
 
 class Navbar extends Component {
   state = {
-    isOpen: false
+    hamburgerIsOpen: false
   }
 
   toggleNavbar = () => {
-    this.setState({ isOpen: !this.state.isOpen })
+    this.setState({ hamburgerIsOpen: !this.state.hamburgerIsOpen })
   }
 
   render () {
@@ -18,7 +18,7 @@ class Navbar extends Component {
       <div className='navigation_wrapper'>
         <div className='navigation_hamburger'>
           <HamburgerMenu
-            isOpen={this.state.isOpen}
+            isOpen={this.state.hamburgerIsOpen}
             menuClicked={this.toggleNavbar}
             color='white'
           />

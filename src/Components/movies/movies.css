@@ -1,16 +1,24 @@
 .movies_container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
+  overflow-x: visible;
 }
+
 .movies_item {
+  margin: 0.5rem;
+  text-align: center;
+  
+}
+.movies_item_img {
+  width: 20vw;  
+}
+/* .movies_item {
   border: solid 5px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   height: 450px;
   width: 20vw;
-  /* color:white; */
-  
 }
 .movies_item_title {
   font-size: 1.5rem;
@@ -33,4 +41,4 @@
   .movies_item{
     width: 50vw;
   }
-}
+} */
